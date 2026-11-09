@@ -1,0 +1,429 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f4f7f9;
+  --surface: #ffffff;
+  --surface-2: #eef3f6;
+  --text: #14212b;
+  --muted: #5a6b78;
+  --border: #d5dee5;
+  --accent: #0b5d8a;
+  --accent-text: #ffffff;
+  --accent-soft: #e1f0f8;
+  --line: #0b74ad;
+  --grid: #e3e9ee;
+  --warn: #8a5300;
+  --warn-bg: #fff4e0;
+  --error: #a3261c;
+  --error-bg: #fdecea;
+  --radius: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.45;
+  color: var(--text);
+  background: var(--bg);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0e1418;
+    --surface: #162027;
+    --surface-2: #1d2a33;
+    --text: #e6edf2;
+    --muted: #9aabb8;
+    --border: #2b3a45;
+    --accent: #5bb8ec;
+    --accent-text: #08202e;
+    --accent-soft: #17303f;
+    --line: #6cc3f2;
+    --grid: #24323c;
+    --warn: #f0b45a;
+    --warn-bg: #2e2412;
+    --error: #ff8a80;
+    --error-bg: #3a1a17;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+}
+
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 16px 16px 40px;
+}
+
+/* Header and footer */
+
+.site-header {
+  padding: 8px 0 20px;
+}
+
+.site-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.01em;
+}
+
+.site-tagline {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.site-footer {
+  margin-top: 32px;
+  font-size: 0.85rem;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
+.site-footer strong {
+  color: var(--text);
+}
+
+/* Panels */
+
+main {
+  display: grid;
+  gap: 20px;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.panel h2 {
+  font-size: 1.1rem;
+}
+
+.panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.panel__actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.small {
+  font-size: 0.85rem;
+}
+
+.notice {
+  border-radius: 8px;
+  padding: 10px 12px;
+  background: var(--warn-bg);
+  color: var(--warn);
+  display: grid;
+  gap: 8px;
+  justify-items: start;
+}
+
+.notice--error {
+  background: var(--error-bg);
+  color: var(--error);
+}
+
+/* Buttons and form fields */
+
+.button {
+  font: inherit;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  padding: 9px 16px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.button--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.button--small {
+  padding: 5px 12px;
+  font-size: 0.875rem;
+}
+
+.button--quiet {
+  background: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.field {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.field--grow {
+  flex: 1 1 220px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.field input,
+.field select {
+  font: inherit;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  width: 100%;
+}
+
+/* Gauges */
+
+.gauge-name {
+  display: block;
+  font-weight: 600;
+}
+
+.gauge-place {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.gauge-list,
+.result-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.gauge-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.gauge-card--open {
+  border-color: var(--accent);
+}
+
+.gauge-card__summary {
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  width: 100%;
+  border: 0;
+  background: transparent;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.gauge-card__summary:hover {
+  background: var(--surface-2);
+}
+
+.gauge-card__summary .flow {
+  text-align: right;
+  justify-items: end;
+}
+
+.gauge-card__body {
+  padding: 0 12px 12px;
+  display: grid;
+  gap: 10px;
+}
+
+.gauge-card__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+
+.result:first-child {
+  border-top: 0;
+}
+
+.result__text {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.quiet-results summary {
+  cursor: pointer;
+  color: var(--muted);
+  padding: 6px 0;
+}
+
+/* Current flow */
+
+.flow {
+  display: grid;
+  gap: 1px;
+  flex-shrink: 0;
+}
+
+.flow--muted {
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.flow__value {
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+
+.result .flow__value {
+  font-size: 1rem;
+}
+
+.flow__value--none {
+  font-size: 1rem;
+  color: var(--muted);
+}
+
+.flow__unit {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.flow__age {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.flow__age--stale,
+.flow__notes {
+  font-size: 0.8rem;
+  color: var(--warn);
+}
+
+/* Chart */
+
+.history {
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.history__caption {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.flow-chart {
+  width: 100%;
+  min-height: 220px;
+}
+
+.flow-chart--loading {
+  display: grid;
+  place-items: center;
+  font-size: 0.875rem;
+}
+
+.flow-chart .recharts-line-curve {
+  stroke: var(--line);
+}
+
+.flow-chart .recharts-cartesian-grid line {
+  stroke: var(--grid);
+}
+
+.flow-chart .recharts-cartesian-axis-line,
+.flow-chart .recharts-cartesian-axis-tick-line {
+  stroke: var(--border);
+}
+
+.flow-chart .recharts-cartesian-axis-tick-value {
+  fill: var(--muted);
+  font-size: 12px;
+}
+
+@media (max-width: 480px) {
+  .gauge-card__summary {
+    flex-direction: column;
+  }
+
+  .gauge-card__summary .flow {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .search .button--primary {
+    width: 100%;
+  }
+}

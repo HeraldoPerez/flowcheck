@@ -1,0 +1,43 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_id": "USGS-03192000",
+        "time_series_id": "65306a4e08104cb48e4e5d101122eac1",
+        "time": "2026-11-09T13:00:00+00:00",
+        "value": "1200",
+        "unit_of_measure": "ft^3/s",
+        "approval_status": "Provisional",
+        "qualifier": null
+      },
+      "id": "5f30a2d1-041a-4645-8b82-5eb8ebe2a351",
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_id": "USGS-03189100",
+        "time_series_id": "04e3918a68504bffb9f1986132b3825c",
+        "time": "2026-11-09T12:30:00+00:00",
+        "value": "184",
+        "unit_of_measure": "ft^3/s",
+        "approval_status": "Provisional",
+        "qualifier": null
+      },
+      "id": "e11b2458-c4b5-4a0d-b888-ef273fdd834c",
+      "geometry": null
+    }
+  ],
+  "numberReturned": 2,
+  "links": [
+    {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/latest-continuous/items?f=json&skipGeometry=true&limit=500&parameter_code=00060&time=P2D&properties=monitoring_location_id,time_series_id,time,value,unit_of_measure,approval_status,qualifier&monitoring_location_id=USGS-03186400,USGS-03187000,USGS-03189100,USGS-03189500,USGS-03189600,USGS-03191000,USGS-03191982,USGS-03192000,USGS-03192001,USGS-03192500,USGS-381001081113201,USGS-381149080565101,USGS-381300080533001,USGS-381310081112701,USGS-381400081104539,USGS-381729080382501,USGS-381730080383039,USGS-381757080461300,USGS-381758080425301,USGS-382314080311139,USGS-382517080181539,USGS-382542080265001"
+    }
+  ],
+  "timeStamp": "2026-11-09T13:22:07.197642Z"
+}

@@ -1,0 +1,185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER AT MOUTH OF WILLIAMS RIVER",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": null
+      },
+      "id": "USGS-03186400",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.5214754894336,
+          38.387331765144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER AT CAMDEN ON GAULEY, WV",
+        "state_name": "West Virginia",
+        "county_name": "Webster County",
+        "drainage_area": 236.0
+      },
+      "id": "USGS-03187000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6009232381688,
+          38.3659428538732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER NEAR CRAIGSVILLE, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 528.0
+      },
+      "id": "USGS-03189100",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.6409242090072,
+          38.2909449384484
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER NEAR SUMMERSVILLE, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 680.0
+      },
+      "id": "USGS-03189500",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8192637712579,
+          38.2709434284849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER BELOW SUMMERSVILLE DAM, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 805.0
+      },
+      "id": "USGS-03189600",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.8881535549729,
+          38.2151103065923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER NEAR LEANDER, WV",
+        "state_name": "West Virginia",
+        "county_name": "Fayette County",
+        "drainage_area": 1211.0
+      },
+      "id": "USGS-03191000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.0137124108078,
+          38.2028863729865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER BELOW RICH CREEK AT JODIE, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 1314.0
+      },
+      "id": "USGS-03191982",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.15315555555556,
+          38.22676111111112
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER ABOVE BELVA, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 1316.0
+      },
+      "id": "USGS-03192000",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1809415148745,
+          38.233439509784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER ABOVE BELVA  UNREG 1928-1965",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 1317.0
+      },
+      "id": "USGS-03192001",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1809415148745,
+          38.233439509784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "monitoring_location_name": "GAULEY RIVER AT BELVA, WV",
+        "state_name": "West Virginia",
+        "county_name": "Nicholas County",
+        "drainage_area": 1403.0
+      },
+      "id": "USGS-03192500",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.1914973294802,
+          38.225106227037
+        ]
+      }
+    }
+  ],
+  "numberReturned": 10,
+  "links": [
+    {
+      "type": "application/geo+json",
+      "rel": "self",
+      "title": "This document as GeoJSON",
+      "href": "https://api.waterdata.usgs.gov/ogcapi/v1/collections/monitoring-locations/items?f=json&limit=50&properties=monitoring_location_name,state_name,county_name,drainage_area&filter-lang=cql2-text&filter=agency_code%3D%27USGS%27%20AND%20site_type_code%3D%27ST%27%20AND%20state_name%3D%27West%20Virginia%27%20AND%20monitoring_location_name%20LIKE%20%27%25GAULEY%25%27"
+    }
+  ],
+  "timeStamp": "2026-11-09T13:22:04.443876Z"
+}
