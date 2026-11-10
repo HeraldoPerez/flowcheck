@@ -4,7 +4,7 @@ Check river levels at USGS gauges and see at a glance whether a run is in range.
 
 You save the gauges you care about and FlowCheck shows the current reading and the last 7 days. Next it will let you set the flow range that works for you on each gauge and color the reading too low, good, or too high. It's for paddlers and anglers who check the same few gauges before every trip.
 
-**Live app:** https://khalick.github.io/flowcheck/
+**Live app:** https
 
 ## Status
 
@@ -22,8 +22,7 @@ Next up is your own low/good/high range per gauge. The full plan is in [ROADMAP.
 Needs Node 22.12 or newer.
 
 ```bash
-git clone https://github.com/Khalick/flowcheck.git
-cd flowcheck/app
+git clone https:
 npm install
 npm run dev        # http://localhost:5173
 ```
